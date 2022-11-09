@@ -1,0 +1,91 @@
+/* navbar css */
+.navbar_cart{
+    border: 1px solid black;
+    height: 106px;
+}
+
+/* below navbar start */
+.basket_head{
+    border:1px solid #cfd0cd;
+    width: 1236px;
+    margin: auto;
+    text-align: start;
+    border-top:none;
+    border-left: none;
+    border-right: none;
+}
+.basket_head>h1{
+    font-size: 24px;
+    font-weight: lighter;
+}
+/* product count */
+.product_count{
+    width: 1236px;
+    margin: auto;
+    text-align: start;
+    padding-top: 10px;
+}
+
+.cart_main{
+    border: 2px solid red;
+    display: flex;
+    width: 1236px;
+    margin: auto;
+}
+.items_div{
+    width: 816px;
+}
+.price_main{
+    border: 1px solid green;
+    width: 420px;
+    display: grid;
+    row-gap: 15px;
+    
+}
+.pin_check{
+    border: 1px solid red;
+    width: 396px;
+    height: 86px;
+    
+}
+.offer_div{
+    border: 1px solid blue;
+    height: 106px;
+    width: 396px;
+    display: flex;
+}
+.price_calc{
+    border: 1px solid violet;
+    height: 304px;
+    width: 396px;
+  
+    
+}
+.offer_img_div>img{
+height: 67px;
+width: 93px;
+}
+.mrp_div{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.discount_div{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+.charge_div{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+.total_div{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+
