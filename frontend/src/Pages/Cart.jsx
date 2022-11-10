@@ -16,17 +16,23 @@ const Cart = () => {
         {/* pin check div start */}
         <div className={styles.price_main}>
             <div className={styles.pin_check}>
+                <div className={styles.pin_check_in}>
                 <span>Deliver to</span>
                 <input/>
                 <button>Check</button>
+                </div>
             </div>
             {/* offer section start */}
             <div className={styles.offer_div}>
+                <div className={styles.offer_div2}>
                 <div className={styles.offer_img_div}><img src='https://www.lifestylestores.com/static/icons/gift-box.png' alt='offer'/></div>
                 <div>
-                    <p>Offers for you !</p>
-                    <p>Choose and apply voucher in 2 simple <br></br>
-                        steps</p>
+                    <ul>
+                    <li><p>Offers for you !</p></li>
+                    <li><p>Choose and apply voucher in 2 simple</p></li>
+                        steps
+                    </ul>
+               </div>
                </div>
             </div>
             {/* total pricing calculation div started */}

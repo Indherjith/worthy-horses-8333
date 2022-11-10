@@ -45,14 +45,46 @@
 .pin_check{
     border: 1px solid red;
     width: 396px;
-    height: 86px;
-    
+    height: 86px;   
+}
+.pin_check_in{
+   margin-top: 24px;
+}
+.pin_check_in span{
+ margin-right: 15px;  
+ font-size: 14px; 
+ color: #000;
+ font-weight: 500;
+}
+.pin_check_in input{
+    border:1px solid #faa619;
+    height: 36px;
+    width: 176px;
+    border-radius: 7px;
+}
+.pin_check_in button{
+    height: 40px;
+    width: 90px;
+    border:1px solid #faa619;
+    color: #faa619;
+    border-radius: 8px;
+    margin-left: 10px;
+    background-color: #fff;
+}
+.pin_check_in button:hover{
+    cursor: pointer;
 }
 .offer_div{
     border: 1px solid blue;
     height: 106px;
     width: 396px;
+}
+.offer_div2{
     display: flex;
+}
+.offer_img_div img{
+    height: 67px;
+    width: 93px;
 }
 .price_calc{
     border: 1px solid violet;
@@ -61,10 +93,7 @@
   
     
 }
-.offer_img_div>img{
-height: 67px;
-width: 93px;
-}
+
 .mrp_div{
     display: flex;
     justify-content: space-between;
