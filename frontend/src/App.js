@@ -1,9 +1,10 @@
 import './App.css';
-import Cart from "./Pages/Cart"
+import WomensProducts from './Pages/Womens/WomensProducts';
+
 function App() {
   return (
     <div className="App">
-      <Cart/>
+      <WomensProducts/>
     </div>
   );
 }
