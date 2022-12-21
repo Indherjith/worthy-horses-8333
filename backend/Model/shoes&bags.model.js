@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 
 const shoeandbagSchema = new mongoose.Schema({
+    user_id : {type : String},
     img : String,
     price : Number,
     category : String,
