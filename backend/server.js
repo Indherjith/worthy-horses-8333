@@ -8,6 +8,7 @@ const app = express();
 
 require("dotenv").config();
 
+const {userRouter} = require("./Routes/user.route");
 const {womensRouter} = require("./Routes/womens.router");
 const {beautyRouter} = require("./Routes/beauty.router");
 const {kidRouter} = require("./Routes/kids.router");
@@ -25,6 +26,8 @@ app.use(express.json());
 app.get("/",(req,res)=>{
     res.send("Hey people, THERE YOU WILL FIND ALL THE ROUTES FOR LIFESTYLE WEBSITE.");
 });
+
+app.use("/auth",userRouter)
 
 app.use("/womens",womensRouter);
 

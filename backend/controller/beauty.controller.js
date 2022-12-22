@@ -64,4 +64,26 @@ const postBeautyProducts = async (req,res) =>{
     // res.send(post_res);
 }
 
-module.exports = {getBeautyProducts,getBeautyProductById,postBeautyProducts}
+const patchBeautyProducts = async (req, res) => {
+    const {productId} = req.params
+    const deletedNote = await TodoModel.findOneAndDelete({_id : productId, userId : req.body.userId})
+    if(deletedNote){
+        res.status(200).send("Deleted")
+    }
+    else{
+        res.send("couldn't delete")
+    }
+}
+
+const deleteBeautyProducts = async (req, res) => {
+    const {productId} = req.params
+    const deletedNote = await TodoModel.findOneAndUpdate({_id : productId, userId : req.body.userId},req.body)
+    if(deletedNote){
+        res.send("Deleted")
+    }
+    else{
+        res.send("couldn't delete")
+    }
+}
+
+module.exports = {getBeautyProducts,getBeautyProductById,postBeautyProducts,deleteBeautyProducts,patchBeautyProducts}
