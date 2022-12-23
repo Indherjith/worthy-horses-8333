@@ -63,6 +63,7 @@ const postWomensProducts = async (req,res) =>{
     }
     // res.send(post_res);
 }
+    // added edit route or delete controller in womens api 
 
 const patchWomensProducts = async (req, res) => {
     const {productId} = req.params

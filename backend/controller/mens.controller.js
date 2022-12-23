@@ -64,6 +64,9 @@ const postMenProducts = async (req,res) =>{
     // res.send(post_res);
 }
 
+    // added edit route or delete controller in mens api 
+
+
 const patchMenProducts = async (req, res) => {
     const {productId} = req.params
     const deletedNote = await TodoModel.findOneAndDelete({_id : productId, userId : req.body.userId})

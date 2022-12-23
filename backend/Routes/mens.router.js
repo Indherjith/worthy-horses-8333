@@ -7,7 +7,7 @@ const menRouter = Router();
 menRouter.get("/",getMenProducts);
 
 menRouter.get("/:menId",getMenProductById);
-
+// added edit route or delete route in men api 
 menRouter.post("/addMenProduct",authentication,postMenProducts);
 menRouter.patch("/updateMenProduct/:productId",authentication,patchMenProducts);
 menRouter.delete("/deleteMenProduct/:productId",authentication,deleteMenProducts);

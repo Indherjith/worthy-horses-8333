@@ -11,6 +11,8 @@ beautyRouter.get("/:beautyId",getBeautyProductById);
 
 beautyRouter.post("/addBeautyProduct",authentication,postBeautyProducts);
 
+// added edit route or delete route in beauty api 
+
 beautyRouter.patch("/updateBeautyProduct/:productId",authentication,patchBeautyProducts);
 
 beautyRouter.delete("/deleteBeautyProduct/:productId",authentication,deleteBeautyProducts);

@@ -64,6 +64,8 @@ const postKidProducts = async (req,res) =>{
     // res.send(post_res);
 }
 
+    // added edit route or delete controller in kids api 
+
 
 const patchKidProducts = async (req, res) => {
     const {productId} = req.params
