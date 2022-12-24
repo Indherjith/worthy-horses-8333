@@ -5,6 +5,7 @@ const {getKidProducts,getKidProductById,postKidProducts,patchKidProducts, delete
 const kidRouter = Router();
 
 kidRouter.get("/",getKidProducts);
+// authenticating as the users and administrators
 
 kidRouter.get("/:kidId",getKidProductById);
 
