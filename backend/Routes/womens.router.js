@@ -7,9 +7,8 @@ const womensRouter = Router();
 womensRouter.get("/",getWomensProducts);
 
 womensRouter.get("/:womensId",getWomensProductById);
-
+// added edit route or delete route in womens api 
 womensRouter.post("/addwomensProduct",authentication,postWomensProducts);
-
 womensRouter.patch("/updatewomensProduct/:productId",authentication,patchWomensProducts);
 
 womensRouter.delete("/deletewomensProduct/:productId",authentication,deleteWomensProducts);

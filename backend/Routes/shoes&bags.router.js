@@ -7,7 +7,7 @@ const ShoesAndBagsRouter = Router();
 ShoesAndBagsRouter.get("/",getShoesAndBagsProducts);
 
 ShoesAndBagsRouter.get("/:ShoesAndBagsId",getShoesAndBagsProductById);
-
+// added edit route or delete route in addShoesAndBags api 
 ShoesAndBagsRouter.post("/addShoesAndBagsProduct",authentication,postShoesAndBagsProducts);
 ShoesAndBagsRouter.patch("/updateShoesAndBagsProduct/:productId",authentication,patchShoesAndBagsProducts);
 ShoesAndBagsRouter.delete("/deleteShoesAndBagsProduct/:productId",authentication,deleteShoesAndBagsProducts);

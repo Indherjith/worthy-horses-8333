@@ -14,6 +14,7 @@ const {beautyRouter} = require("./Routes/beauty.router");
 const {kidRouter} = require("./Routes/kids.router");
 const {ShoesAndBagsRouter} = require("./Routes/shoes&bags.router");
 const {menRouter} = require("./Routes/mens.router");
+const { errMiddleware } = require('./middlewares/errror');
 
 let PORT = process.env.PORT || 8500;
 
@@ -38,6 +39,8 @@ app.use("/kids",kidRouter);
 app.use("/ShoesAndBags",ShoesAndBagsRouter);
 
 app.use("/mens",menRouter);
+
+app.use(errMiddleware());
 
 app.listen(PORT,async ()=>{
     try{

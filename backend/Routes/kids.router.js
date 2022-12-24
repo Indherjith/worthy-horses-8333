@@ -8,6 +8,8 @@ kidRouter.get("/",getKidProducts);
 
 kidRouter.get("/:kidId",getKidProductById);
 
+// added edit route or delete route in kid api 
+
 kidRouter.post("/addKidProduct",authentication,postKidProducts);
 kidRouter.patch("/updateKidProduct/:productId",authentication,patchKidProducts);
 kidRouter.delete("/deleteKidProduct/:productId",authentication,deleteKidProducts);

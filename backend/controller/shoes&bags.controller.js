@@ -62,6 +62,8 @@ const postShoesAndBagsProducts = async (req,res) =>{
     }
     // res.send(post_res);
 }
+    // added edit route or delete controller in Shoe&Bags api 
+
 
 const patchShoesAndBagsProducts = async (req, res) => {
     const {productId} = req.params
