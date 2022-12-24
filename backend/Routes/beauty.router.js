@@ -7,6 +7,8 @@ const beautyRouter = Router();
 
 beautyRouter.get("/",getBeautyProducts);
 
+// authenticating as the users and administrators
+
 beautyRouter.get("/:beautyId",getBeautyProductById);
 
 beautyRouter.post("/addBeautyProduct",authentication,postBeautyProducts);

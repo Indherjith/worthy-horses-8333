@@ -5,7 +5,7 @@ const {getShoesAndBagsProducts,getShoesAndBagsProductById,postShoesAndBagsProduc
 const ShoesAndBagsRouter = Router();
 
 ShoesAndBagsRouter.get("/",getShoesAndBagsProducts);
-
+// authenticating as the users and administrators
 ShoesAndBagsRouter.get("/:ShoesAndBagsId",getShoesAndBagsProductById);
 // added edit route or delete route in addShoesAndBags api 
 ShoesAndBagsRouter.post("/addShoesAndBagsProduct",authentication,postShoesAndBagsProducts);

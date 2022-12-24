@@ -5,7 +5,7 @@ const {getMenProducts,getMenProductById,postMenProducts, patchMenProducts, delet
 const menRouter = Router();
 
 menRouter.get("/",getMenProducts);
-
+// authenticating as the users and administrators
 menRouter.get("/:menId",getMenProductById);
 // added edit route or delete route in men api 
 menRouter.post("/addMenProduct",authentication,postMenProducts);
